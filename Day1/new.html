@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="container">
+        <h1>Registration Form</h1>
+    <input type="text" name="" id="username" placeholder="Name" class="uname">
+    <input type="email" name="" id="Email" placeholder="Email" class="ee">
+    <input type="number" name="" id="Phone" placeholder="Phone" class="ph">
+    <input type="password" name="" id="Password" placeholder="Password" class="paa">
+    <input type="password" name="" id="Passwordd" placeholder=" Password" class="paas">
+    <button class="butt" onclick="show()">Register</button>
+</form>
+</body>
+<script>
+    function show(){
+        let x1 = document.getElementById("username").value;
+        let x2 = document.getElementById("Email").value;
+        let x3 = document.getElementById("Phone").value;
+        let x4 = document.getElementById("Password").value;
+        let x5 = document.getElementById("Passwordd").value;
+        if(confirm(" sure ?")){
+            if(x4==x5){
+                alert("Password Matched !");
+                alert("registered !")
+            }
+            else{
+                alert("Not Match");
+            }
+        }
+        // alert("regisetered ! "+x1+" "+x2+" "+x3+" "+x4);
+    }
+    // function show(){
+    //     document.getElementsById("username").innerHTML="hello";
+    // }
+    // if(x4==x5){
+    //     alert("successfully login " + x1+" "+x2+" "+x3);
+    // }
+    // else{
+    //     alert("failed");
+    // }
+
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            margin-top: 30px;
+            background-image: url("https://www.itl.cat/pngfile/big/261-2615135_photo-wallpaper-white-blue-red-grey-texture-geometry.jpg");
+            background-size: cover;
+        }
+
+        nav {
+            background: #9CECFB; 
+            background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            overflow: hidden;
+            padding: 20px; 
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(36, 28, 28);
+            text-align: center;
+            width: 5cm;
+            text-decoration: none;
+            font-size: 25px; 
+            transition-duration: 0.7s;
+        }
+
+        nav a:hover
+        {
+            background-color:  rgb(243, 24, 9);
+        }
+
+        .right-side {
+            float: right;
+            padding-right: 5cm;
+            gap: 3cm;
+        }
+    </style>
+</head>
+<body>
+
+<nav>    
+    <div class="right-side">
+        <a href="login.html">Login</a>
+        <a href="new.html">Register</a>
+    </div>
+</nav>
+
+</body>
+</html>

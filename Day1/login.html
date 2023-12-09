@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <form class="container">
+        <h1>Registration Form</h1>
+    <input type="text" name="" id="username" placeholder="Name" class="uname">
+    <input type="password" name="" id="Password" placeholder="Password" class="paa">
+    <button class="butt" onclick="show()">Login</button>
+</form>
+</body>
+<script>
+    function show(){
+        let x1 = document.getElementById("username").value;
+        let x2 = document.getElementById("Password").value;
+        if(confirm(" sure ?")){
+            if(x1==x2){
+                alert("Password Matched !");
+                alert("login!")
+            }
+            else{
+                alert("Not Match");
+            }
+        }
+        // alert("regisetered ! "+x1+" "+x2+" "+x3+" "+x4);
+    }
+    // function show(){
+    //     document.getElementsById("username").innerHTML="hello";
+    // }
+    // if(x4==x5){
+    //     alert("successfully login " + x1+" "+x2+" "+x3);
+    // }
+    // else{
+    //     alert("failed");
+    // }
+
+</script>
+</html>
