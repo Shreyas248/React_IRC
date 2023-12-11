@@ -1,0 +1,24 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: right;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+}
+.nav-links{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    text-decoration: none;
+    
+}
