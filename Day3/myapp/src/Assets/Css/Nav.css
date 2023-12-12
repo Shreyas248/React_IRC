@@ -1,12 +1,13 @@
+
 .navbar{
     height: 5rem;
     width: 100vw;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(236, 0, 0);
     text-align: center;
     display: flex;
-    float: left;
+    float: center;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     font-weight: 600;
     position: fixed;
     top: 0;
@@ -20,5 +21,8 @@
     gap: 3rem;
     list-style: none;
     text-decoration: none;
-    
+}
+a{
+    text-decoration: none;
+    text-decoration-style: none;
 }
