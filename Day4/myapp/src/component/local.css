@@ -1,0 +1,107 @@
+.Card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow:
+  10.3px 7.4px 5.2px -15px rgba(0, 0, 0, 0.071),
+  19.8px 14.2px 10px -15px rgba(0, 0, 0, 0.091),
+  29px 20.9px 14.9px -15px rgba(0, 0, 0, 0.102),
+  39.1px 28.1px 21px -15px rgba(0, 0, 0, 0.107),
+  52.4px 37.7px 30.5px -15px rgba(0, 0, 0, 0.107),
+  73.9px 53.2px 50.1px -15px rgba(0, 0, 0, 0.101),
+  114px 82px 156px -15px rgba(0, 0, 0, 0.07)
+;
+    text-align: center;
+  }
+  
+  .cookieHead {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cookiedesc {
+    font-style: italic;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .buttoncont {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .accept
+  {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  .accept :hover{
+    transform: scale(1.2);
+  }
+
+  .decline {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #f90909;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .btn{
+    padding-top: 10cm;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .new{
+    width: 5cm;
+    height: 2cm;
+  }
+
+  .btn :hover
+  {
+    transform: scale(1.1);
+
+    box-shadow:
+  10.3px 7.4px 5.2px -15px rgba(0, 0, 0, 0.071),
+  19.8px 14.2px 10px -15px rgba(0, 0, 0, 0.091),
+  29px 20.9px 14.9px -15px rgba(0, 0, 0, 0.102),
+  39.1px 28.1px 21px -15px rgba(0, 0, 0, 0.107),
+  52.4px 37.7px 30.5px -15px rgba(0, 0, 0, 0.107),
+  73.9px 53.2px 50.1px -15px rgba(0, 0, 0, 0.101),
+  114px 82px 156px -15px rgba(0, 0, 0, 0.07);
+  }
