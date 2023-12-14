@@ -1,6 +1,6 @@
 import Nav from "./Components/Nav";
-import About from "./Pages/About";
 import Home from "./Pages/Home";
+import About from "./Pages/About";
 import {Route, Routes} from 'react-router-dom';
 function App() {
   return (
