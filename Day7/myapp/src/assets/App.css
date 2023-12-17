@@ -1,0 +1,31 @@
+.App
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding: 12px 32px; 
+}
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/409/443/non_2x/adventure-tour-on-the-theme-of-climbing-trekking-hiking-walking-or-vacation-with-forest-and-mountain-views-in-flat-nature-background-poster-illustration-vector.jpg");
+    /* background-size: cover; */
+    /* padding: 12px 32px;  */
+    background-color:burlywood;
+}
+button{
+    padding: 12px 32px;
+    margin-top: 30px;
+    border-radius: 15px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center;
+     outline: none;
+     justify-content: center;
+     bottom: 50px;
+     background-color: aquamarine;
+     
+}
+

@@ -8,13 +8,15 @@ import Login from './components/Login.js'
 import SignUp from './components/SignUp'
 import Error from './components/Error'
 
+
 function App() {
   return (
+    
     <Router>
       <Header />
-
       <Switch>
         <Route exact path='/'>
+    
           <Showcase />
           <Destinations />
         </Route>

@@ -1,16 +1,15 @@
-import React from 'react';
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-function App(){
-  const notify = () => toast("Hey there!!");
-
+import Cc from "./components/Cc"
+import Fc from "./components/Fc"
+import "./assets/App.css"
+function App() {
   return (
-    <div>
-      <button onClick={notify}>Click me</button>
-      <ToastContainer />
-    </div>
+  <>
+  <div className="App">
+  <Cc/>
+  <Fc/>
+  </div>
+  </>  
   );
 }
-export default App
+
+export default App;
