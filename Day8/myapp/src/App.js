@@ -1,10 +1,12 @@
-import React from 'react'
-// import WithLoading from './components/WithLoading'
+import React from 'react';
+import './components/App.css';
+import WithLoading from './components/WithLoading';
 
-// const WrappedComponentWithLoading = WithLoading(MyComponent)
- const App = () => {
+function App() {
   return (
-    <div></div>
-  )
+    <>
+    </>
+  );
 }
 
+export default App;
