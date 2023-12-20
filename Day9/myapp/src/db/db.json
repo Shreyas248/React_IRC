@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": 4,
+      "username": "Pixels",
+      "password": 1234
+    }
+  ],
+  "products": [
+    {
+      "pid": 1,
+      "productname": "orange"
+    }
+  ]
+}
