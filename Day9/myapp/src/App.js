@@ -1,16 +1,18 @@
-import {Routes, Route} from 'react-router-dom'
-import User from './pages/User';
-import { AddUser } from './pages/AddUser';
-import { EditUser } from './pages/EditUser';
-const App =()=> {
+import { Routes, Route } from "react-router-dom";
+import User from './pages/User'
+import Edituser from './pages/EditUser'
+import Adduser from './pages/AddUser'
+import './assets/css/core.css'
+
+function App() {
   return (
-    <div>
+    <>
       <Routes>
-      <Route path='/' element={<User/>}/>
-      <Route path='/add' element={<AddUser/>}/>
-      <Route path='/' element={<EditUser/>}/>
+        <Route path="/" element={<User />} />
+        <Route path="/add" element={<Adduser />} />
+        <Route path="/edit/:id" element={<Edituser />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
