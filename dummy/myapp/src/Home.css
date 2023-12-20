@@ -1,0 +1,40 @@
+/* App.css (or any other CSS file you're using) */
+
+/* Style for the sidebar */
+.sidebar {
+    width: 20%;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the main content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  

@@ -1,4 +1,4 @@
-/* Login.css */
+/* Adjust these styles according to your design requirements */
 
 .login-container {
   display: flex;
@@ -6,47 +6,50 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f0f0f0;
 }
 
 .login-form {
   width: 300px;
-  background-color: #fff;
-  padding: 20px;
+  padding: 50px;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .input-group {
   margin-bottom: 15px;
 }
 
-.input-group label {
+label {
   display: block;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.input-group input {
-  width: calc(100% - 10px);
+input[type='text'],
+input[type='password'] {
+  width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
 }
 
+button[type='submit'],
 button {
-  width: 100%;
+  width: 95%;
   padding: 10px;
-  border: none;
-  border-radius: 4px;
   background-color: #007bff;
   color: #fff;
-  font-size: 16px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
 }
 
 .register-section {
@@ -59,15 +62,8 @@ button:hover {
 }
 
 .register-section button {
-  padding: 8px 20px;
+  background-color: transparent;
   border: none;
-  border-radius: 4px;
-  background-color: #28a745;
-  color: #fff;
-  font-size: 16px;
+  color: #007bff;
   cursor: pointer;
-}
-
-.register-section button:hover {
-  background-color: #218838;
 }

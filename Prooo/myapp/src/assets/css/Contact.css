@@ -3,7 +3,7 @@
 .contact-form-container {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #79b1ec;
   }
   
   button:focus {

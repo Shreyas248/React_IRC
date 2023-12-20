@@ -53,7 +53,7 @@ const Register = () => {
             required
           />
         </div>
-        <button type="submit" onClick={() => navigate('/')}>Register</button>
+        <button type="submit" onClick={() => navigate('/home')}>Register</button>
       </form>
     </div>
   );
