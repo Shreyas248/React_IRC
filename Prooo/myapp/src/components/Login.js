@@ -1,24 +1,29 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import {Link, useNavigate} from 'react-router-dom';
 import '../assets/css/Login.css'; // Import your CSS file for styling
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+  
+  const navigate = useNavigate();
+  const Notify = () => toast.success("Login Successful");
+  
   const handleLogin = (e) => {
+    alert("Login successful");
     e.preventDefault();
-    // Perform login logic here (validate username and password, make API calls, etc.)
     console.log('Username:', username);
     console.log('Password:', password);
-    // You can add your login logic here and redirect the user upon successful login
+    navigate("/home");
+  };
+  
+  
+  const handleRegister = () => {
+    navigate("/register")
   };
 
-  const handleRegister = (e) => {
-    e.preventDefault();
-  };
-
-  const navigate = useNavigate();
 
   return (
     <div className="login-container">
@@ -44,12 +49,24 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit" onClick={() => navigate('/home')}>Login</button>
+        <button type="submit" onClick={handleLogin}>Login</button>
       </form>
       <div className="register-section">
         <p>Don't have an account?</p>
-        <button onClick={() => navigate('/register')}>Register Now</button>
+        <button onClick={handleRegister}>Register Now</button>
       </div>
+      <ToastContainer
+            position="top-center"
+            autoClose={4000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+        />
     </div>
   );
 };

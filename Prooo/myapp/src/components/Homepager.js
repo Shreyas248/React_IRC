@@ -16,19 +16,17 @@ const Homepager = () => {
   ];
   
     const navigate = useNavigate();
-    const Notify = () => alert('Explored succesfully');
-    const Notifier = () => {
-      alert('Logout Successful') ;
-      navigate("/")
-    }
+    const Notify = () => ('Explored succesfully');
+    const Notifier = () => ('Logout Successful') ;
+
   return (
     <div className='ombre'>
     <div className="sidebar">
       <div className="logo">
-        {/* Your logo or brand */}
+       
       </div>
       <ul className="sidebar-menu">
-        <Link to="/home"><li>Home</li></Link>
+        <Link to="/home"><li>Dashboard</li></Link>
         <Link to="/about"><li>About</li></Link>
         <Link to="/contact"><li>Contact</li></Link>
         <Link to="/"><li>Logout</li></Link>
