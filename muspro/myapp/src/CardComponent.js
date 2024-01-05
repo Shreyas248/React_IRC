@@ -1,7 +1,54 @@
-import React from 'react';
+import React, { useState } from "react";
+import AudioFiles from "./AudioFiles";
+import { audios } from "./AudioData";
+import Player from "./Player";
 import './Assets/CardComponent.css';
+
+
 const CardComponent = () => {
+  const [songs, setSongs] = useState(audios);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [currentSong, setCurrentSOng] = useState(songs[0]);
+
+  const checkNumber = (number) => {
+    if (number > songs.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return songs.length - 1;
+    }
+    return number;
+  };
+
+  const getSongData = (song, index) => {
+    setCurrentIndex(index);
+    setCurrentSOng(song);
+  };
+
+  const nextSong = () => {
+    setCurrentIndex((currentIndex) => {
+      let newIndex = currentIndex + 1;
+
+      return checkNumber(newIndex);
+    });
+
+    setCurrentSOng(audios[currentIndex]);
+  };
+
+  const prevSong = () => {
+    setCurrentIndex((currentIndex) => {
+      let newIndex = currentIndex - 1;
+      return checkNumber(newIndex);
+    });
+    setCurrentSOng(audios[currentIndex]);
+  };
+
+
   return (
+    <div className="xshreyx">
+      
     <section className="hero-section">
       <div className="card-grid">
         <a className="card" href="#">
@@ -34,6 +81,17 @@ const CardComponent = () => {
         </a>
       </div>
     </section>
+    <section>
+      <div className="player-main">
+        <Player
+          currentSong={currentSong}
+          currentIndex={currentIndex}
+          nextSong={nextSong}
+          prevSong={prevSong}
+        />
+      </div>
+      </section>
+    </div>
   );
 };
 
