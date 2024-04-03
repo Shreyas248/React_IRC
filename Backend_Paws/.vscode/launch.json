@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-PawsApplication<Paws>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.Paws.PawsApplication",
+      "projectName": "Paws",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

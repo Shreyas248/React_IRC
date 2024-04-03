@@ -10,6 +10,26 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-NexusApplication<nexus>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "suren.nexus.NexusApplication",
+            "projectName": "nexus",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PawsApplication<Paws>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.Paws.PawsApplication",
+            "projectName": "Paws",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
